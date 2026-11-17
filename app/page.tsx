@@ -5,7 +5,7 @@ import { Search, ShieldCheck, Zap, MessageCircle, Swords, Crown, Plus, X, Upload
 type Character = { id:number; name:string; level:number; vocation:string; world:string; pvp:string; price:number; magic:number; skill:number; charms:number; outfits:number; mounts:number; image?:string; description:string; status:"Disponível"|"Reservado"|"Vendido"; source:"manual"|"bazaar" };
 const initial:Character[] = [
  {id:1,name:"Saint Legendary",level:1495,vocation:"Elite Knight",world:"Lunarian",pvp:"Optional PvP",price:45000,magic:15,skill:215,charms:46,outfits:44,mounts:26,description:"Personagem de alto nível com ampla coleção de outfits e montarias.",status:"Disponível",source:"manual"},
- {id:2,name:"Shadow Guardian",level:1280,vocation:"Royal Paladin",world:"Lunarian",pvp:"Optional PvP",price:28900,magic: ಆಗ,skill:125,charms:38,outfits:31,mounts:18,description:"Personagem pronto para novas aventuras.",status:"Disponível",source:"manual"},
+ {id:2,name:"Shadow Guardian",level:1280,vocation:"Royal Paladin",world:"Lunarian",pvp:"Optional PvP",price:28900,magic:0,skill:125,charms:38,outfits:31,mounts:18,description:"Personagem pronto para novas aventuras.",status:"Disponível",source:"manual"},
  {id:3,name:"Arcane Nova",level:1125,vocation:"Elder Druid",world:"Lunarian",pvp:"Optional PvP",price:19700,magic:112,skill:25,charms:29,outfits:22,mounts:14,description:"Ótima opção para quem procura um personagem mágico.",status:"Reservado",source:"manual"}
 ];
 const money=(v:number)=>v.toLocaleString("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0});
